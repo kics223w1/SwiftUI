@@ -10,8 +10,18 @@ import SwiftUI
 @main
 struct P1App: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup("Main Window") {
+           ContentGames()
         }
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentSize)
+        .handlesExternalEvents(matching: ["main"])
+        
+        WindowGroup("P1 Games") {
+           ContentView()
+        }
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentSize)
+        .handlesExternalEvents(matching: ["p1"])
     }
 }

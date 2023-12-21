@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31993FB2B3484B400CE5C28 /* ContentGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31993FA2B3484B400CE5C28 /* ContentGames.swift */; };
 		D34C8E8F2B30C59400EF2563 /* P1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C8E8E2B30C59400EF2563 /* P1App.swift */; };
 		D34C8E912B30C59400EF2563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C8E902B30C59400EF2563 /* ContentView.swift */; };
 		D34C8E932B30C59500EF2563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34C8E922B30C59500EF2563 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		D34C8EA12B30C59500EF2563 /* P1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C8EA02B30C59500EF2563 /* P1Tests.swift */; };
 		D34C8EAB2B30C59500EF2563 /* P1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C8EAA2B30C59500EF2563 /* P1UITests.swift */; };
 		D34C8EAD2B30C59500EF2563 /* P1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C8EAC2B30C59500EF2563 /* P1UITestsLaunchTests.swift */; };
+		D3C069F92B32AEDA00B7FE83 /* Bacteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C069F82B32AEDA00B7FE83 /* Bacteria.swift */; };
+		D3C069FB2B32B01D00B7FE83 /* BacteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C069FA2B32B01D00B7FE83 /* BacteriaView.swift */; };
+		D3C069FD2B33137E00B7FE83 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C069FC2B33137E00B7FE83 /* GameBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D31993FA2B3484B400CE5C28 /* ContentGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentGames.swift; sourceTree = "<group>"; };
+		D31993FC2B349CFD00CE5C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D34C8E8B2B30C59400EF2563 /* P1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34C8E8E2B30C59400EF2563 /* P1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1App.swift; sourceTree = "<group>"; };
 		D34C8E902B30C59400EF2563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +51,9 @@
 		D34C8EA62B30C59500EF2563 /* P1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34C8EAA2B30C59500EF2563 /* P1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1UITests.swift; sourceTree = "<group>"; };
 		D34C8EAC2B30C59500EF2563 /* P1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3C069F82B32AEDA00B7FE83 /* Bacteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bacteria.swift; sourceTree = "<group>"; };
+		D3C069FA2B32B01D00B7FE83 /* BacteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacteriaView.swift; sourceTree = "<group>"; };
+		D3C069FC2B33137E00B7FE83 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +104,16 @@
 		D34C8E8D2B30C59400EF2563 /* P1 */ = {
 			isa = PBXGroup;
 			children = (
+				D31993FC2B349CFD00CE5C28 /* Info.plist */,
 				D34C8E8E2B30C59400EF2563 /* P1App.swift */,
 				D34C8E902B30C59400EF2563 /* ContentView.swift */,
 				D34C8E922B30C59500EF2563 /* Assets.xcassets */,
 				D34C8E972B30C59500EF2563 /* P1.entitlements */,
 				D34C8E942B30C59500EF2563 /* Preview Content */,
+				D3C069F82B32AEDA00B7FE83 /* Bacteria.swift */,
+				D3C069FA2B32B01D00B7FE83 /* BacteriaView.swift */,
+				D3C069FC2B33137E00B7FE83 /* GameBoard.swift */,
+				D31993FA2B3484B400CE5C28 /* ContentGames.swift */,
 			);
 			path = P1;
 			sourceTree = "<group>";
@@ -260,7 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34C8E912B30C59400EF2563 /* ContentView.swift in Sources */,
+				D31993FB2B3484B400CE5C28 /* ContentGames.swift in Sources */,
 				D34C8E8F2B30C59400EF2563 /* P1App.swift in Sources */,
+				D3C069FD2B33137E00B7FE83 /* GameBoard.swift in Sources */,
+				D3C069F92B32AEDA00B7FE83 /* Bacteria.swift in Sources */,
+				D3C069FB2B32B01D00B7FE83 /* BacteriaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +440,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"P1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = P1/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"P1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = P1/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
